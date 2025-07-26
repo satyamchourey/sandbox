@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import FirstChild from './Components/FirstChild';
+import { createContext } from 'react';
+export  const MyContext = createContext();
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div> 
+        <h1>
+          Hey There, this is just me revisitng my react skills and testing out some new features.
+        </h1>
+        <MyContext.Provider value={{ name: "John Doe", age: 30 }}>
+          <FirstChild />
+        </MyContext.Provider>
+      </div>
     </div>
   );
 }
