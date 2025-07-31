@@ -44,3 +44,46 @@ const myStack = new Stack(1)
 myStack.push(2)
 myStack.push(3)
 console.log(myStack)
+
+
+// solved using stacks
+
+const isValid = (str) => {
+    let stacks = [];
+    let brackets = {
+        "{": "}",
+        "[": "]",
+        "(": ")"
+    }
+
+    for (let i of str) {
+        if(brackets[i]){
+            stacks.push(i)
+        }else{
+            let top = stacks.pop()
+            if(!top || brackets[top] !== i){
+                return false
+            }
+        }
+    }
+    return stacks.length==0
+}
+
+// console.log(isValid("({})"))
+// console.log(isValid("({)}"))
+// console.log(isValid("(){}"))
+
+const reverse = (str) => {
+    let stacks = [];
+    let reversed = ""
+    for (let i of str){
+        stacks.push(i);
+    }
+    // console.log("-----" , stacks)
+    while(stacks.length>0){
+        reversed += stacks.pop()
+    }
+    return reversed;
+}
+
+// console.log(reverse("hello world"))
