@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+1. Build a Stopwatch / Timer
+Description: Implement a stopwatch with Start, Stop, Reset, and Lap functionality.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tests skills:
 
-## Available Scripts
+useState, useEffect cleanup
 
-In the project directory, you can run:
+Correct interval handling
 
-### `npm start`
+Avoiding stale closures
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+UI responsiveness
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Search with Debounce
+Description: Create a search bar that calls an API with a debounce of 500ms and shows results in a dropdown.
 
-### `npm test`
+Tests skills:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Controlled components
 
-### `npm run build`
+useEffect with cleanup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Debounce implementation (manual or lodash)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Handling loading, error states
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Infinite Scroll
+Description: Load more items when the user scrolls to the bottom.
 
-### `npm run eject`
+Tests skills:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+IntersectionObserver or scroll event handling
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Paginated API calls
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Merging fetched results
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Performance optimization (virtualization is a plus)
 
-## Learn More
+4. Editable Data Table
+Description: Render a table with editable cells, inline validation, and save/cancel actions.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Tests skills:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Complex state management
 
-### Code Splitting
+Controlled form inputs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Optimistic UI updates
 
-### Analyzing the Bundle Size
+Component reusability
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Drag and Drop List
+Description: Implement a list whose order can be rearranged with drag-and-drop.
 
-### Making a Progressive Web App
+Tests skills:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+react-beautiful-dnd or native drag events
 
-### Advanced Configuration
+State updates on reordering
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Accessibility considerations
 
-### Deployment
+6. Custom Hook for Fetching Data
+Description: Create a useFetch hook with loading, error, and retry capabilities.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Tests skills:
 
-### `npm run build` fails to minify
+Hook design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Abstraction & reusability
+
+Avoiding unnecessary re-fetches
+
+Error boundaries (bonus)
+
+7. Theming with Context
+Description: Build a light/dark mode toggle with Context that persists preference to localStorage.
+
+Tests skills:
+
+Context API
+
+Persisting state
+
+Global theming
+
+Component re-render optimization
+
+8. Form with Validation
+Description: Sign-up form with live validation, error messages, and a submit button that only works when all inputs are valid.
+
+Tests skills:
+
+Controlled forms
+
+Validation logic
+
+Managing touched/dirty state
+
+Accessibility (ARIA labels, focus handling)
+
+9. Image Gallery with Modal
+Description: Clickable image thumbnails that open a modal with navigation arrows.
+
+Tests skills:
+
+Component composition
+
+Portal usage for modals
+
+Keyboard navigation handling
+
+Managing global events
+
+10. Real-Time Updates
+Description: Live chat or stock price component using WebSockets.
+
+Tests skills:
+
+Real-time data handling
+
+Proper cleanup of event listeners
+
+Optimistic rendering
+
+Data synchronization
